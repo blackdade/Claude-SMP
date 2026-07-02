@@ -49,6 +49,8 @@ Only include if the piece genuinely calls for a visual (a stat callout graphic f
 
 **If a graphic is included**, add a full IMAGE PROMPT block — see Output Format below. The prompt must be specific enough to generate on the first try: always include subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, and aspect ratio. Substack header images default to 16:9 unless the piece calls for something else. Provide two variants (A and B) alongside the main prompt.
 
+**If a video is included** (a talking-head intro or voiceover screen recording embedded in the piece), do not write the full spoken script inline. Output a VIDEO SCRIPT TRIGGER block instead — see Output Format below. Sanjay pastes that prompt into a fresh Claude chat to get the full script written separately.
+
 ---
 
 ## OUTPUT FORMAT
@@ -62,6 +64,19 @@ WORD COUNT: [N]
 
 CREATIVE ASSET:
 [Full brief, or "None — piece doesn't need one."]
+
+VIDEO SCRIPT TRIGGER (only if the piece includes a talking-head or voiceover video):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copy and paste this into Claude chat to get the full video script:
+
+"Write a video script for this post: [post title/topic]
+Platform: Substack
+Duration: [45-60 seconds / 60-90 seconds]
+Format: [Talking head / Voiceover / Graphic video]
+Follow the same structure and voice rules as my Substack posts —
+short punchy sentences, hook in first 3 seconds,
+visual direction every line, strong CTA at end."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 IMAGE PROMPT (only if a graphic is included — paste directly into Midjourney or Ideogram):
 [Full generation prompt — subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, aspect ratio 16:9, quality modifiers]

@@ -55,6 +55,8 @@ Same block as LinkedIn, from STYLE_LIBRARY.md. For threads, the creative asset b
 
 **If the post needs a static image** (Type: Graphic, or any post where a still image is the asset instead of video), also include a full IMAGE PROMPT block — see Output Format below. The prompt must be specific enough to generate on the first try: always include subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, and aspect ratio. X images are 1:1. Provide two variants (A and B) alongside the main prompt.
 
+**If the post needs a video** (Type: Talking head or Voiceover), do not write the full spoken script inline. Output a VIDEO SCRIPT TRIGGER block instead — see Output Format below. Sanjay pastes that prompt into a fresh Claude chat to get the full script written separately.
+
 ---
 
 ## OUTPUT FORMAT
@@ -68,9 +70,21 @@ CREATIVE ASSET:
 Type: [Talking head / Graphic / Voiceover / None]
 Required: [Yes / Optional / No]
 Duration: [if video]
-Script: [if required]
 Visual direction: [B-roll, cuts, pacing]
 Caption style: [notes]
+
+VIDEO SCRIPT TRIGGER (only if Type is Talking head or Voiceover):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copy and paste this into Claude chat to get the full video script:
+
+"Write a video script for this post: [post title/topic]
+Platform: X
+Duration: [45-60 seconds / 60-90 seconds]
+Format: [Talking head / Voiceover / Graphic video]
+Follow the same structure and voice rules as my X posts —
+short punchy sentences, hook in first 3 seconds,
+visual direction every line, strong CTA at end."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 IMAGE PROMPT (paste directly into Midjourney or Ideogram — only if Type is Graphic, or a still image is the asset):
 [Full generation prompt — subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, aspect ratio 1:1, quality modifiers]
