@@ -131,6 +131,7 @@ Save as a Google Doc with:
 - Field labels inside a Creative Asset block (`Type:`, `Required:`, `Duration:`, `Visual direction:`, `Caption style:`), plus `CREATIVE ASSET`, `IMAGE PROMPT`, `VIDEO SCRIPT TRIGGER`, `Variant A:`, and `Variant B:` — all wrapped in `<b>...</b>`.
 - Every other line of body text (including the variant prompt text itself) is a plain `<p>` paragraph, no bold.
 - The actual post copy (the LinkedIn/X/Substack text a human copy-pastes to the platform) stays in plain `<p>` tags with no bold or heading markup inside it — that would corrupt what gets copy-pasted. Hashtag lines inside post bodies must stay as plain paragraph text, never inside a heading tag.
+- **Consecutive `<p>` tags do NOT render with a visible blank-line gap in the Drive HTML→Docs conversion — verified by inspection, not just by reading the file back (the read-file tool always shows double-newlines regardless of real rendered spacing, so it can't catch this).** To match STYLE_LIBRARY.md's "blank line between every paragraph" rule, insert an explicit empty paragraph (`<p>&nbsp;</p>`) between every paragraph of post copy and between every field in a Creative Asset block. Do this everywhere in the document, not just inside posts.
 - Use `<hr>` between major sections and `<ul><li>` for the Notes for Sanjay bullet list.
 - Keep paragraphs short so it reads cleanly on mobile.
 
