@@ -307,6 +307,7 @@ Posts Sanjay shares for inspiration. Agent reads these before writing.
 | Date Added | Source | Topic | Why it's useful |
 |---|---|---|---|
 | 2026-07-02 | Sanjay | Full LinkedIn history | Base style library |
+| 2026-07-03 | Priyanshu Patel, LinkedIn | Spec pitch podcast repurposing strategy | "Public audit" client-acquisition format — pitch a named target's content strategy in public instead of in DMs |
 | [Add as shared] | | | |
 
 ---
