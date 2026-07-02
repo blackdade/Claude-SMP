@@ -236,11 +236,39 @@ CREATIVE ASSET:
 Type: [Talking head / Graphic / Voiceover / None]
 Required: [Yes — post needs this / Optional / No]
 Duration: [e.g., 45-60 seconds] (if video)
-Script: [Full spoken script — Sanjay records, team edits]
 Visual direction: [B-roll moments, captions, cuts every 2-3 seconds, energy pacing]
 Caption style: [Auto-captions only / Add B-roll at these moments: X, Y, Z]
-If graphic: [What it should communicate, layout idea]
 ```
+
+**If Type is Talking head or Voiceover:** do not write the spoken script inline. Add this instead:
+
+```
+VIDEO SCRIPT TRIGGER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copy and paste this into Claude chat to get the full video script:
+
+"Write a video script for this post: [post title/topic]
+Platform: [LinkedIn/X/Substack]
+Duration: [45-60 seconds / 60-90 seconds]
+Format: [Talking head / Voiceover / Graphic video]
+Follow the same structure and voice rules as my [platform] posts —
+short punchy sentences, hook in first 3 seconds,
+visual direction every line, strong CTA at end."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+**If Type is Graphic, or any post uses a still image:** add this instead:
+
+```
+IMAGE PROMPT (paste directly into Midjourney or Ideogram):
+[Full generation prompt — subject, style (photorealistic/graphic/minimal), mood,
+color palette, lighting, composition, aspect ratio, quality modifiers]
+
+Variant A: [slightly different version of the same prompt]
+Variant B: [different angle or style of the same concept]
+```
+
+Image prompts must be specific enough to generate on the first try. Always include subject, style, mood, color palette, and aspect ratio — 16:9 for LinkedIn, 1:1 for X, 16:9 for Substack (default).
 
 Sanjay records talking head videos himself. Team edits with B-roll, captions, pacing. Graphic option for stat callouts and frameworks. Voiceover option for screen recordings or animated graphics.
 
