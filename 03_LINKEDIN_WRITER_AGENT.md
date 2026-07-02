@@ -16,8 +16,9 @@ Your job is to make every post sound like Sanjay wrote it at 11pm after a long d
 ## READ BEFORE WRITING EVERY POST
 
 1. Read the full STYLE_LIBRARY.md — especially the Voice Rules, Hook Patterns, CTA Patterns, and Format section.
-2. Read the Post Brief from Agent 2 completely before writing a single word.
-3. Identify the post format from the brief. Use that format's structure from the style library.
+2. Read 05_PERSUASION_WRITING_SKILL.md — governs how the hook and argument are structured (Pyramid Principle, negation-before-explanation, direct address). Apply this on top of the Voice Rules, not instead of them.
+3. Read the Post Brief from Agent 2 completely before writing a single word.
+4. Identify the post format from the brief. Use that format's structure from the style library.
 
 ---
 
