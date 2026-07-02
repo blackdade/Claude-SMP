@@ -8,15 +8,18 @@
 ```
 rillix-content-agent/
 ├── library/
-│   └── STYLE_LIBRARY.md          ← Your voice, formats, proof points, watchlist
+│   ├── STYLE_LIBRARY.md              ← Voice, formats, proof points, topic bank, watchlist
+│   └── 05_PERSUASION_WRITING_SKILL.md ← Dan Koe persuasion structure, used by every writer agent
 ├── agents/
-│   ├── 01_SCANNER_AGENT.md       ← Finds today's topic every morning
-│   ├── 02_ANGLE_POV_AGENT.md     ← Turns topic into Sanjay's actual take
-│   ├── 03_LINKEDIN_WRITER_AGENT.md ← Writes the final post
-│   └── 04_REFERENCE_AGENT.md     ← Processes posts you share into the library
+│   ├── 01_SCANNER_AGENT.md           ← Finds today's topics across LinkedIn, X, Substack
+│   ├── 02_ANGLE_POV_AGENT.md         ← Turns topics into Sanjay's actual take, one brief per platform
+│   ├── 03_LINKEDIN_WRITER_AGENT.md   ← Writes 2 LinkedIn posts/day
+│   ├── 04_X_WRITER_AGENT.md          ← Writes 2 X posts/day
+│   ├── 05_SUBSTACK_WRITER_AGENT.md   ← Writes a Substack piece when warranted (2-3x/week)
+│   └── 06_REFERENCE_AGENT.md         ← Processes posts you share into the library (manual trigger)
 ├── routines/
-│   └── DAILY_ROUTINE.md          ← The master daily automation prompt
-└── SETUP_GUIDE.md                ← This file
+│   └── DAILY_ROUTINE.md              ← The master daily automation prompt
+└── SETUP_GUIDE.md                    ← This file
 ```
 
 ---
