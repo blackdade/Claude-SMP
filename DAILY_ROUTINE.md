@@ -1,7 +1,7 @@
 # Rillix Content Agent — Daily Routine
-# Schedule: 9:30am IST, every day
+# Schedule: 10:00am IST (4:30am UTC), every day
 # Runtime: Claude Code Routines (runs on Anthropic servers, no laptop needed)
-# Output: One LinkedIn draft delivered to Sanjay by 10am IST
+# Output: One LinkedIn draft delivered to Sanjay by 10:30am IST
 
 ---
 
@@ -117,7 +117,8 @@ Do not force a bad topic. A solid evergreen post beats a weak news-peg post ever
 ## ROUTINE METADATA
 
 - Timezone: IST (UTC+5:30)
-- Target delivery: 10:00am IST
+- Run time: 10:00am IST (4:30am UTC)
+- Target delivery: 10:30am IST
 - Frequency: Daily
 - Output: Text document (paste-ready)
 - Model: claude-sonnet-4-6
