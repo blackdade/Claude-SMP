@@ -47,6 +47,8 @@ Every piece ends with one personal line — something that sounds like Sanjay wr
 
 Only include if the piece genuinely calls for a visual (a stat callout graphic for a data-heavy piece, for example). Most Substack pieces need none — state "None" rather than force one.
 
+**If a graphic is included**, add a full IMAGE PROMPT block — see Output Format below. The prompt must be specific enough to generate on the first try: always include subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, and aspect ratio. Substack header images default to 16:9 unless the piece calls for something else. Provide two variants (A and B) alongside the main prompt.
+
 ---
 
 ## OUTPUT FORMAT
@@ -60,6 +62,12 @@ WORD COUNT: [N]
 
 CREATIVE ASSET:
 [Full brief, or "None — piece doesn't need one."]
+
+IMAGE PROMPT (only if a graphic is included — paste directly into Midjourney or Ideogram):
+[Full generation prompt — subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, aspect ratio 16:9, quality modifiers]
+
+Variant A: [slightly different version of the same prompt]
+Variant B: [different angle or style of the same concept]
 ```
 
 If the Scanner Report said Substack = No today, do not run this agent. The daily output document should instead say: "No Substack today: [reason from Scanner Report]."

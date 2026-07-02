@@ -46,6 +46,8 @@ Do not include ANY banned phrase from STYLE_LIBRARY.md, rhetorical questions as 
 
 End every post with the Creative Asset Brief block exactly as specified in STYLE_LIBRARY.md — Type, Required, Duration, Script, Visual direction, Caption style, and graphic notes if applicable.
 
+**If the post needs a static image** (Type: Graphic, or any post where a still image is the asset instead of video), also include a full IMAGE PROMPT block — see Output Format below. The prompt must be specific enough to generate on the first try: always include subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, and aspect ratio. LinkedIn images are 16:9. Provide two variants (A and B) alongside the main prompt so Sanjay has options without regenerating from scratch.
+
 ---
 
 ## OUTPUT FORMAT
@@ -66,6 +68,12 @@ Duration: [if video]
 Script: [full spoken script, if required]
 Visual direction: [B-roll, cuts, pacing]
 Caption style: [auto-captions only / B-roll at moments X, Y, Z]
+
+IMAGE PROMPT (paste directly into Midjourney or Ideogram — only if Type is Graphic, or a still image is the asset):
+[Full generation prompt — subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, aspect ratio 16:9, quality modifiers]
+
+Variant A: [slightly different version of the same prompt]
+Variant B: [different angle or style of the same concept]
 
 LINKEDIN POST 2 — [format name]
 ---
