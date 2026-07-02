@@ -16,7 +16,7 @@ Every morning:
 6. Runs the Substack Writer Agent — only if the Scanner said Substack = Yes today
 7. Runs the full quality check on every draft
 8. Compiles one complete daily document covering all platforms
-9. Delivers that document to Sanjay's Gmail
+9. Saves that document to Google Drive as a Google Doc
 
 ---
 
@@ -117,20 +117,33 @@ NOTES FOR SANJAY
 - Other candidates available on request: [one line each]
 ```
 
-### Step 9 — Email delivery
+### Step 9 — Save to Google Drive
 
-Send the complete daily content document (the exact output from Step 8) to Sanjay's Gmail.
+After all drafts are generated and quality checked, use the connected Google Drive MCP tool to save the complete daily content document (the exact output from Step 8).
 
-**Delivery method:** a Gmail connector is available to this account, but it only supports creating drafts — there is no send capability. "Delivery" therefore means creating a Gmail draft, not sending a live email; Sanjay opens Gmail and reads it straight from Drafts, no send required on the agent's part. Do not treat the absence of a send tool as an error — this is expected and correct. If a send-capable tool is ever connected instead, use it and actually send.
+Save as a Google Doc with:
+- **Folder:** "Rillix Daily Content" — search for it first (Drive search, `title = 'Rillix Daily Content' and mimeType = 'application/vnd.google-apps.folder'`); create it only if it doesn't already exist. Never create a duplicate folder.
+- **Filename:** `Rillix Content — [Day, Date Month Year]`, e.g. `Rillix Content — Friday, 04 July 2026`
 
-Use the connected Gmail MCP connector's `create_draft` tool (tool name looks like `mcp__<uuid>__create_draft`; if deferred, load it via ToolSearch with query "gmail draft" or "select:create_draft").
+Document contents, in order:
+1. WHAT I FOUND TODAY (scanner summary)
+2. LINKEDIN POST 1 (full draft + creative asset brief)
+3. LINKEDIN POST 2 (full draft + creative asset brief)
+4. X POST 1 (full draft + creative asset brief)
+5. X POST 2 (full draft + creative asset brief)
+6. SUBSTACK (full draft, or "No Substack today — [reason]")
+7. NOTES FOR SANJAY (timing, what to watch, other candidates)
 
-Email fields:
-- **To:** i2ksanjayg@gmail.com
-- **Subject:** Rillix Daily Content — [Date] — [Today's top topic in 5 words, drawn from the Scanner Report's top recommended candidate]
-- **Body:** the full daily output document from Step 8, exactly as generated — all platform drafts, all creative asset briefs, all image prompts, all video script triggers, and the Notes for Sanjay section. Nothing summarized or trimmed. Format it cleanly for mobile reading: keep each platform section separated with the same ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ dividers used in the document itself, short paragraphs, no wide tables.
+Format cleanly — each platform section clearly separated with the same ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ dividers used elsewhere in the document, short paragraphs, readable on mobile.
 
-Confirm at the end of the run whether the draft was created successfully. If it fails, say so explicitly rather than silently skipping this step — the daily document should still be delivered as the routine's final response either way.
+Use the connected Google Drive MCP connector's file-creation tool (tool name looks like `mcp__<uuid>__create_file`; if deferred, load it via ToolSearch with query "google drive create file" or "select:create_file"). To create a Google Doc directly: pass the document text as `textContent` with `contentMimeType: "text/plain"` and the folder's id as `parentId` — plain text content is automatically converted to a native Google Doc unless conversion is explicitly disabled.
+
+After saving, confirm at the end of the run:
+- File name created
+- Folder it was saved in
+- Direct link to the doc
+
+If saving fails, say so explicitly rather than silently skipping this step — the daily document should still be delivered as the routine's final response either way.
 
 ---
 
@@ -147,5 +160,5 @@ Default to an evergreen Topic Bank item from STYLE_LIBRARY.md for that platform 
 - Target delivery: 10:30am IST
 - Frequency: Daily
 - Output: 2 LinkedIn posts, 2 X posts, Substack (conditional) — one compiled document
-- Delivery: Gmail draft to i2ksanjayg@gmail.com (create_draft only — no send capability currently connected)
+- Delivery: Google Doc saved to the "Rillix Daily Content" folder in Google Drive
 - Model: claude-sonnet-5
