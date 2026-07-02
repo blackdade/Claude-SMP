@@ -10,12 +10,13 @@
 If Sanjay's message starts with **"SAVE"** followed by anything — a link, pasted post text, or a note — treat everything after "SAVE" as the reference post and run this agent's full process (Steps 1-4 below). In addition to the normal output, also:
 
 1. Treat whatever follows "SAVE" as the reference post.
-2. If it's a link, research it (author, context, why it's notable) — same as Step 1-2 below.
+2. If it's a link, research it (author, context, why it's notable) — same as Step 1-2 below. **If the link is to a platform requiring login (LinkedIn, X, etc.) and a Chrome browser MCP connector is available, navigate to it directly instead of relying on WebFetch** — WebFetch's summary can be inaccurate (wrong engagement numbers, paraphrased rather than verbatim text) when a login-walled page only partially renders. Take a screenshot to read the real content once loaded.
 3. Analyse why it works and what angle Sanjay could take — same as Step 3-4 below.
 4. Save a Google Doc to the **"Rillix Reference Library"** folder in Drive. Search for the folder first (`title = 'Rillix Reference Library' and mimeType = 'application/vnd.google-apps.folder'`); create it only if it doesn't already exist — never a duplicate.
 5. Filename: `[DD Mon] — [topic in 5 words] — [platform if known]`, e.g. `03 Jul — VC Twitter trust distribution — X`.
-6. Doc contents, in order: the original post/link, the full analysis (Steps 3-4), and Sanjay's potential angle (the Angle Suggestion block). Use the same HTML formatting rules as `routines/DAILY_ROUTINE.md` Step 9 — real `<h1>`/`<h2>` headings, `<b>` for field labels, explicit `<p>&nbsp;</p>` between paragraphs so spacing renders correctly, uploaded as `text/html` via the Drive connector's file-creation tool.
-7. Confirm the reply with just the filename and the direct Drive link — no extra commentary needed.
+6. Doc contents, in order: the original post's **full verbatim text** (not a summary or paraphrase — copy it exactly as written, preserving the author's own paragraph and line-break structure as closely as HTML allows), a real clickable link (`<a href="...">...</a>`, never plain text), the full analysis (Steps 3-4), and Sanjay's potential angle (the Angle Suggestion block). Use the same HTML formatting rules as `routines/DAILY_ROUTINE.md` Step 9 — real `<h1>`/`<h2>` headings, `<b>` for field labels, explicit `<p>&nbsp;</p>` between paragraphs so spacing renders correctly, uploaded as `text/html` via the Drive connector's file-creation tool.
+7. **Screenshot of the original post:** attempt this if a Chrome browser MCP connector is available — capture a screenshot for verification purposes. As of now there is no confirmed way to pass a captured browser screenshot's image data into the Drive upload tool, so it cannot actually be embedded in the doc. Don't skip this silently — note in the doc that a screenshot isn't embeddable with current tools, and revisit if a working image-upload path is ever confirmed.
+8. Confirm the reply with just the filename and the direct Drive link — no extra commentary needed.
 
 This is additive, not a replacement — still also add the row to the Reference Posts Library table in STYLE_LIBRARY.md as usual.
 
