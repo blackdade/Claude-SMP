@@ -125,13 +125,14 @@ Save as a Google Doc with:
 - **Folder:** "Rillix Daily Content" — search for it first (Drive search, `title = 'Rillix Daily Content' and mimeType = 'application/vnd.google-apps.folder'`); create it only if it doesn't already exist. Never create a duplicate folder.
 - **Filename:** `Rillix Content — [Day, Date Month Year]`, e.g. `Rillix Content — Friday, 04 July 2026`
 
-**Formatting rules (critical — the Drive upload converts Markdown into real Google Docs formatting, so use it):**
-- Section titles (What I Found Today, LinkedIn Post 1, LinkedIn Post 2, X Post 1, X Post 2, Substack, Notes for Sanjay) must be written as Markdown headings (`## Section Title`), not plain text. Real headings populate the Doc's Outline panel, giving one-click jump-to-section navigation — this is the closest available substitute for tabs, since this upload path cannot create actual multi-tab Google Docs.
-- Field labels inside a Creative Asset block (`Type:`, `Required:`, `Duration:`, `Visual direction:`, `Caption style:`) must be bold (`**Type:**`), with the value in normal text right after.
-- `**CREATIVE ASSET**`, `**IMAGE PROMPT**`, and `**VIDEO SCRIPT TRIGGER**` labels must be bold headings/labels, not plain text.
-- `**Variant A:**` and `**Variant B:**` labels must be bold — the variant prompt text itself stays in normal (non-bold) paragraph text.
-- The actual post copy (the LinkedIn/X/Substack text a human copy-pastes to the platform) stays exactly as plain, unformatted text — do not bold or add heading markup inside the post body itself, since that would corrupt what gets copy-pasted.
-- Keep short paragraphs and blank lines between elements so it reads cleanly on mobile.
+**Formatting rules (critical — upload as HTML, not plain text; `text/plain` uploads do NOT get parsed for Markdown, they insert literal `#`/`**` characters with no real formatting):**
+- Build the document body as real HTML (`<html><body>...</body></html>`) and upload with `contentMimeType: "text/html"`. Google Drive's import conversion turns HTML tags into native Google Docs formatting.
+- Document title: `<h1>`. Section titles (What I Found Today, LinkedIn Post 1, LinkedIn Post 2, X Post 1, X Post 2, Substack, Notes for Sanjay): `<h2>`. Real headings populate the Doc's Outline panel, giving one-click jump-to-section navigation — the closest available substitute for tabs, since this upload path cannot create actual multi-tab Google Docs.
+- Field labels inside a Creative Asset block (`Type:`, `Required:`, `Duration:`, `Visual direction:`, `Caption style:`), plus `CREATIVE ASSET`, `IMAGE PROMPT`, `VIDEO SCRIPT TRIGGER`, `Variant A:`, and `Variant B:` — all wrapped in `<b>...</b>`.
+- Every other line of body text (including the variant prompt text itself) is a plain `<p>` paragraph, no bold.
+- The actual post copy (the LinkedIn/X/Substack text a human copy-pastes to the platform) stays in plain `<p>` tags with no bold or heading markup inside it — that would corrupt what gets copy-pasted. Hashtag lines inside post bodies must stay as plain paragraph text, never inside a heading tag.
+- Use `<hr>` between major sections and `<ul><li>` for the Notes for Sanjay bullet list.
+- Keep paragraphs short so it reads cleanly on mobile.
 
 Document contents, in order (each as a `##` heading):
 1. What I Found Today (scanner summary)
@@ -142,7 +143,7 @@ Document contents, in order (each as a `##` heading):
 6. Substack (full draft, or "No Substack today — [reason]")
 7. Notes for Sanjay (timing, what to watch, other candidates)
 
-Use the connected Google Drive MCP connector's file-creation tool (tool name looks like `mcp__<uuid>__create_file`; if deferred, load it via ToolSearch with query "google drive create file" or "select:create_file"). To create a Google Doc directly: pass the Markdown-formatted document text as `textContent` with `contentMimeType: "text/plain"` and the folder's id as `parentId` — the upload auto-converts Markdown headings and bold into native Google Docs formatting unless conversion is explicitly disabled.
+Use the connected Google Drive MCP connector's file-creation tool (tool name looks like `mcp__<uuid>__create_file`; if deferred, load it via ToolSearch with query "google drive create file" or "select:create_file"). To create the Google Doc: pass the HTML document as `textContent` with `contentMimeType: "text/html"` and the folder's id as `parentId` — the upload converts the HTML tags into native Google Docs formatting.
 
 After saving, confirm at the end of the run:
 - File name created
