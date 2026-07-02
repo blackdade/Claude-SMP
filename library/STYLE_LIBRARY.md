@@ -308,3 +308,17 @@ Posts Sanjay shares for inspiration. Agent reads these before writing.
 |---|---|---|---|
 | 2026-07-02 | Sanjay | Full LinkedIn history | Base style library |
 | [Add as shared] | | | |
+
+---
+
+## SAVED WORKFLOWS
+
+### "SAVE" command
+Say **"SAVE"** followed by a link, pasted post, or note to file it as a reference post — no need to explain what to do with it. Handled by `agents/06_REFERENCE_AGENT.md`:
+- Researches the link/post and its author
+- Analyses why it works and what angle Sanjay could take
+- Saves a formatted Google Doc to the **"Rillix Reference Library"** Drive folder (filename: `[DD Mon] — [topic in 5 words] — [platform if known]`)
+- Also logs a row in the Reference Posts Library table above
+- Confirms with just the filename and Drive link
+
+Added 2026-07-03. See `agents/06_REFERENCE_AGENT.md` for the full step-by-step.

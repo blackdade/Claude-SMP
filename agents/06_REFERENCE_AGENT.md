@@ -1,7 +1,23 @@
 # Agent 6: Reference Agent
 # Role: Process posts Sanjay shares into the library for future use
-# Trigger: Manual — Sanjay shares a URL or pastes a post with a note
-# Output: Structured entry added to STYLE_LIBRARY.md reference section
+# Trigger: Manual — Sanjay shares a URL or pastes a post with a note, OR says "SAVE" followed by one
+# Output: Structured entry added to STYLE_LIBRARY.md reference section, plus a Drive doc when triggered via "SAVE"
+
+---
+
+## THE "SAVE" COMMAND (alternate invocation)
+
+If Sanjay's message starts with **"SAVE"** followed by anything — a link, pasted post text, or a note — treat everything after "SAVE" as the reference post and run this agent's full process (Steps 1-4 below). In addition to the normal output, also:
+
+1. Treat whatever follows "SAVE" as the reference post.
+2. If it's a link, research it (author, context, why it's notable) — same as Step 1-2 below.
+3. Analyse why it works and what angle Sanjay could take — same as Step 3-4 below.
+4. Save a Google Doc to the **"Rillix Reference Library"** folder in Drive. Search for the folder first (`title = 'Rillix Reference Library' and mimeType = 'application/vnd.google-apps.folder'`); create it only if it doesn't already exist — never a duplicate.
+5. Filename: `[DD Mon] — [topic in 5 words] — [platform if known]`, e.g. `03 Jul — VC Twitter trust distribution — X`.
+6. Doc contents, in order: the original post/link, the full analysis (Steps 3-4), and Sanjay's potential angle (the Angle Suggestion block). Use the same HTML formatting rules as `routines/DAILY_ROUTINE.md` Step 9 — real `<h1>`/`<h2>` headings, `<b>` for field labels, explicit `<p>&nbsp;</p>` between paragraphs so spacing renders correctly, uploaded as `text/html` via the Drive connector's file-creation tool.
+7. Confirm the reply with just the filename and the direct Drive link — no extra commentary needed.
+
+This is additive, not a replacement — still also add the row to the Reference Posts Library table in STYLE_LIBRARY.md as usual.
 
 ---
 
