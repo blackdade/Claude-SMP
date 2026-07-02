@@ -119,24 +119,30 @@ NOTES FOR SANJAY
 
 ### Step 9 — Save to Google Drive
 
-After all drafts are generated and quality checked, use the connected Google Drive MCP tool to save the complete daily content document (the exact output from Step 8).
+After all drafts are generated and quality checked, use the connected Google Drive MCP tool to save the complete daily content document (the same content as Step 8, reformatted per the rules below — do not upload flat plain text).
 
 Save as a Google Doc with:
 - **Folder:** "Rillix Daily Content" — search for it first (Drive search, `title = 'Rillix Daily Content' and mimeType = 'application/vnd.google-apps.folder'`); create it only if it doesn't already exist. Never create a duplicate folder.
 - **Filename:** `Rillix Content — [Day, Date Month Year]`, e.g. `Rillix Content — Friday, 04 July 2026`
 
-Document contents, in order:
-1. WHAT I FOUND TODAY (scanner summary)
-2. LINKEDIN POST 1 (full draft + creative asset brief)
-3. LINKEDIN POST 2 (full draft + creative asset brief)
-4. X POST 1 (full draft + creative asset brief)
-5. X POST 2 (full draft + creative asset brief)
-6. SUBSTACK (full draft, or "No Substack today — [reason]")
-7. NOTES FOR SANJAY (timing, what to watch, other candidates)
+**Formatting rules (critical — the Drive upload converts Markdown into real Google Docs formatting, so use it):**
+- Section titles (What I Found Today, LinkedIn Post 1, LinkedIn Post 2, X Post 1, X Post 2, Substack, Notes for Sanjay) must be written as Markdown headings (`## Section Title`), not plain text. Real headings populate the Doc's Outline panel, giving one-click jump-to-section navigation — this is the closest available substitute for tabs, since this upload path cannot create actual multi-tab Google Docs.
+- Field labels inside a Creative Asset block (`Type:`, `Required:`, `Duration:`, `Visual direction:`, `Caption style:`) must be bold (`**Type:**`), with the value in normal text right after.
+- `**CREATIVE ASSET**`, `**IMAGE PROMPT**`, and `**VIDEO SCRIPT TRIGGER**` labels must be bold headings/labels, not plain text.
+- `**Variant A:**` and `**Variant B:**` labels must be bold — the variant prompt text itself stays in normal (non-bold) paragraph text.
+- The actual post copy (the LinkedIn/X/Substack text a human copy-pastes to the platform) stays exactly as plain, unformatted text — do not bold or add heading markup inside the post body itself, since that would corrupt what gets copy-pasted.
+- Keep short paragraphs and blank lines between elements so it reads cleanly on mobile.
 
-Format cleanly — each platform section clearly separated with the same ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ dividers used elsewhere in the document, short paragraphs, readable on mobile.
+Document contents, in order (each as a `##` heading):
+1. What I Found Today (scanner summary)
+2. LinkedIn Post 1 (full draft + creative asset brief, formatted per the rules above)
+3. LinkedIn Post 2 (same)
+4. X Post 1 (same)
+5. X Post 2 (same)
+6. Substack (full draft, or "No Substack today — [reason]")
+7. Notes for Sanjay (timing, what to watch, other candidates)
 
-Use the connected Google Drive MCP connector's file-creation tool (tool name looks like `mcp__<uuid>__create_file`; if deferred, load it via ToolSearch with query "google drive create file" or "select:create_file"). To create a Google Doc directly: pass the document text as `textContent` with `contentMimeType: "text/plain"` and the folder's id as `parentId` — plain text content is automatically converted to a native Google Doc unless conversion is explicitly disabled.
+Use the connected Google Drive MCP connector's file-creation tool (tool name looks like `mcp__<uuid>__create_file`; if deferred, load it via ToolSearch with query "google drive create file" or "select:create_file"). To create a Google Doc directly: pass the Markdown-formatted document text as `textContent` with `contentMimeType: "text/plain"` and the folder's id as `parentId` — the upload auto-converts Markdown headings and bold into native Google Docs formatting unless conversion is explicitly disabled.
 
 After saving, confirm at the end of the run:
 - File name created
