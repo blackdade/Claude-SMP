@@ -296,7 +296,18 @@ Sanjay records talking head videos himself. Team edits with B-roll, captions, pa
 |---|---|---|
 | David Weisburd | LinkedIn/Podcast | Client — How I Invest podcast |
 | Usama Nouri | LinkedIn | Client — AcceMind/Escapade Leaders |
+| Gary Vaynerchuk | X, LinkedIn | Content strategy, attention economy |
+| Alex Hormozi | X, LinkedIn | Business growth, offer strategy |
+| Dan Koe | X, Substack | Solopreneur, persuasion writing |
+| Shaan Puri | X, Substack | Startup ideas, founder takes |
+| Sam Parr | X, Substack | Media business, founder journey |
+| Harry Stebbings / 20VC | LinkedIn, X, Substack | VC media, podcast authority |
+| a16z | LinkedIn, X | VC media moves, signal posts |
+| Sequoia | LinkedIn, X | VC signal |
+| YC | LinkedIn, X | Startup launches, founder content |
 | [Add more as Sanjay identifies them] | | |
+
+Sanjay can add more anytime by saying: "Add [name] to my watchlist — [why they matter]."
 
 ---
 
