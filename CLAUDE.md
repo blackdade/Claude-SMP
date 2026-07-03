@@ -18,7 +18,7 @@ This is NOT a news channel. It's a thought-leadership engine that occasionally u
 
 ## The agent pipeline
 
-Read `library/STYLE_LIBRARY.md` and `library/05_PERSUASION_WRITING_SKILL.md` before any agent runs — they govern voice and persuasion structure for everything downstream.
+Read `library/STYLE_LIBRARY.md`, `library/05_PERSUASION_WRITING_SKILL.md`, and `library/06_IMAGE_PROMPT_FRAMEWORK.md` before any agent runs — they govern voice, persuasion structure, and image style for everything downstream. The image framework matters especially: never generate a flat quote-card or generic infographic — every graphic picks a specific "scroll-stopping" style (cyberpunk anime workstation, data-mosaic matrix art, neon typography, etc.) matched to the post's theme.
 
 1. **agents/01_SCANNER_AGENT.md** — finds today's topics. Runs 9 searches (4 LinkedIn, 4 X, 1 combined) plus daily Watchlist monitoring, scores every candidate (topic-fit rubric, plus an Outlier Score for post-shaped candidates), and calls a Substack yes/no.
 2. **agents/02_ANGLE_POV_AGENT.md** — turns each platform's top topic into a brief: Sanjay's actual position, proof point, key points, engagement hook. One brief per platform.

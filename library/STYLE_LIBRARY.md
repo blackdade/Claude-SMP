@@ -257,18 +257,19 @@ visual direction every line, strong CTA at end."
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-**If Type is Graphic, or any post uses a still image:** add this instead:
+**If Type is Graphic, or any post uses a still image:** add this instead. Never a flat quote-card or generic infographic — pick a style from `06_IMAGE_PROMPT_FRAMEWORK.md`'s Style-to-Post Theme table, and follow its Prompt Structure Template and NEVER DO / ALWAYS DO rules:
 
 ```
 IMAGE PROMPT (paste directly into Midjourney or Ideogram):
-[Full generation prompt — subject, style (photorealistic/graphic/minimal), mood,
-color palette, lighting, composition, aspect ratio, quality modifiers]
+Style: [Primary style name from 06_IMAGE_PROMPT_FRAMEWORK.md]
+[Full generation prompt — art style, subject/scene, environmental details,
+lighting/mood, color palette, one unexpected detail, aspect ratio, quality keywords]
 
-Variant A: [slightly different version of the same prompt]
-Variant B: [different angle or style of the same concept]
+Variant A (Primary style): [full prompt in the theme's primary style]
+Variant B (Backup style): [full prompt in the theme's backup style — a genuinely different visual approach]
 ```
 
-Image prompts must be specific enough to generate on the first try. Always include subject, style, mood, color palette, and aspect ratio — 16:9 for LinkedIn, 1:1 for X, 16:9 for Substack (default).
+Image prompts must be specific enough to generate on the first try. Aspect ratio by platform: **LinkedIn 1:1 or 4:5, X 16:9, Substack 16:9 or 3:2 (default 16:9).** See `06_IMAGE_PROMPT_FRAMEWORK.md` for the full style library, platform sizing table, and quality-keyword conventions.
 
 Sanjay records talking head videos himself. Team edits with B-roll, captions, pacing. Graphic option for stat callouts and frameworks. Voiceover option for screen recordings or animated graphics.
 

@@ -17,8 +17,9 @@ Make every post sound like Sanjay wrote it at 11pm after a long day — sharp, d
 
 1. Read STYLE_LIBRARY.md in full — Voice Rules, Hook Patterns, CTA Patterns, LinkedIn Post Formats, Creative Asset Brief spec.
 2. Read 05_PERSUASION_WRITING_SKILL.md — apply the opening pattern and framework arsenal on top of the voice rules, never instead of them.
-3. Read the LinkedIn brief from Agent 2 completely before writing a single word.
-4. For post 2, use the second-strongest LinkedIn candidate from the Scanner Report, or an evergreen Topic Bank item if the split rule requires a different post type than post 1.
+3. Read 06_IMAGE_PROMPT_FRAMEWORK.md — governs image style selection whenever a post needs a graphic. Never generate a flat quote-card or generic infographic.
+4. Read the LinkedIn brief from Agent 2 completely before writing a single word.
+5. For post 2, use the second-strongest LinkedIn candidate from the Scanner Report, or an evergreen Topic Bank item if the split rule requires a different post type than post 1.
 
 ---
 
@@ -46,7 +47,7 @@ Do not include ANY banned phrase from STYLE_LIBRARY.md, rhetorical questions as 
 
 End every post with the Creative Asset Brief block exactly as specified in STYLE_LIBRARY.md — Type, Required, Duration, Script, Visual direction, Caption style, and graphic notes if applicable.
 
-**If the post needs a static image** (Type: Graphic, or any post where a still image is the asset instead of video), also include a full IMAGE PROMPT block — see Output Format below. The prompt must be specific enough to generate on the first try: always include subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, and aspect ratio. LinkedIn images are 16:9. Provide two variants (A and B) alongside the main prompt so Sanjay has options without regenerating from scratch.
+**If the post needs a static image** (Type: Graphic, or any post where a still image is the asset instead of video), also include a full IMAGE PROMPT block — see Output Format below. Pick a style from `06_IMAGE_PROMPT_FRAMEWORK.md`'s Style-to-Post Theme table matching this post's theme — never a flat quote-card or generic infographic. Follow that file's Prompt Structure Template and its NEVER DO / ALWAYS DO rules. LinkedIn images are **1:1 or 4:5** (4:5 takes more feed space on mobile — prefer it unless the style specifically calls for a wider frame). Variant A = the Primary Style prompt for this theme, Variant B = the Backup Style prompt — genuinely different visual approaches, not two tweaks of the same concept.
 
 **If the post needs a video** (Type: Talking head or Voiceover), do not write the full spoken script inline. Output a VIDEO SCRIPT TRIGGER block instead — see Output Format below. Sanjay pastes that prompt into a fresh Claude chat to get the full script written separately.
 
@@ -84,10 +85,11 @@ visual direction every line, strong CTA at end."
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 IMAGE PROMPT (paste directly into Midjourney or Ideogram — only if Type is Graphic, or a still image is the asset):
-[Full generation prompt — subject, style (photorealistic/graphic/minimal), mood, color palette, lighting, composition, aspect ratio 16:9, quality modifiers]
+Style: [Primary style name from 06_IMAGE_PROMPT_FRAMEWORK.md, e.g. "Cyberpunk Anime Workstation"]
+[Full generation prompt following the framework's Prompt Structure Template — art style, subject/scene, environmental details, lighting/mood, color palette, one unexpected detail, aspect ratio 1:1 or 4:5, quality keywords]
 
-Variant A: [slightly different version of the same prompt]
-Variant B: [different angle or style of the same concept]
+Variant A (Primary style): [full prompt in the theme's primary style]
+Variant B (Backup style): [full prompt in the theme's backup style — a genuinely different visual approach]
 
 LINKEDIN POST 2 — [format name]
 ---
