@@ -19,27 +19,24 @@ Explain the idea like it's for a 5-year-old. Never write at a 5th-grade level. S
 
 ---
 
-## THE OPENING PATTERN (use on every post, every platform)
+## THE OPENING MOVE (structure, not a script — vary the technique every post)
 
-1. **State the conclusion first.** No setup, no context sentence before it. This is the Pyramid Principle: answer → argument → proof, never the reverse.
-2. **Kill 1-2 likely misreadings immediately** with flat, short negations: "No, it's not X." "No, it's not Y." Do this *before* explaining what it actually is. This is what creates pull — the reader is told what a thing isn't before they're told what it is, which is a wider gap than just stating a fact.
-3. **Deliver the reframe** — the real claim, stated flat.
-4. **Add one more tension line before backing it up.** Do not explain immediately. Let the reframe sit for one beat.
+Every post states its conclusion first, no setup, no throat-clearing sentence before it (Pyramid Principle: answer → argument → proof, never the reverse). That part is non-negotiable.
 
-Template:
-```
-[Bold, checkable claim.]
+*How* it kills the reader's easiest wrong interpretation and *how* it builds tension before backing the claim up should change from post to post. Treat these as different tools for the same job, not one template to reuse:
 
-No, it's not [obvious wrong read].
+- **Negation opener** — "No, it's not X. No, it's not Y." Kill 1-2 likely misreadings before the reframe. Strong when the topic has an obvious, tempting wrong read everyone will reach for. Overused, it reads like a copy-pasted script — use it when it's genuinely the sharpest tool, not as the default.
+- **Contrast hook** — state the claim as a before/after or an unexpected pairing ("Most podcasters record 50 episodes a year. And stay invisible.").
+- **Vulnerable opener** — lead with an honest, personal admission that implies the reframe rather than stating it outright.
+- **Counterintuitive stat or number** — let a specific fact do the negation's job; the surprising number already kills the obvious reading.
+- **Direct address challenge** — open by naming the reader's assumption back at them ("You think X. You're solving the wrong problem.").
+- **News peg + personal lens** — state what the event obviously means, then flip straight to what it actually means, no separate negation beats needed.
 
-No, it's not [second obvious wrong read].
+See STYLE_LIBRARY.md's HOOK PATTERNS table for the full list with examples — pull from there and rotate. **Never use the same opening technique in two consecutive posts, on any platform.** If the last post used a negation opener, the next one must use something else, even if the negation would technically work here too. Sameness across posts is a bigger risk than an imperfect fit on any single post.
 
-[The real reframe, stated flat.]
+After the opening move, whichever technique was used, land the real reframe stated flat, then add one more tension line before backing it up — don't explain immediately, let the reframe sit for one beat.
 
-[One line that raises stakes or implicates the reader — do not resolve yet.]
-```
-
-On X, compress this into 1-3 lines total — the pattern still applies, just faster. On Substack, this opening pattern can run longer and be followed by a deeper multi-paragraph unpacking before the first supporting point.
+On X, compress whichever opening technique is chosen into 1-3 lines total. On Substack, the opening can run longer and be followed by a deeper multi-paragraph unpacking before the first supporting point.
 
 ---
 
@@ -78,8 +75,10 @@ When useful, name the mechanism while using it ("notice this is the reframe, not
 ## QUALITY CHECK (add to every writer agent's checklist)
 
 - [ ] Hook states a conclusion, not a setup
-- [ ] At least one "No, it's not X" negation appears before the explanation (or the compressed X equivalent)
+- [ ] Opening technique is deliberately chosen for this specific post (negation, contrast, vulnerable opener, stat, direct address, news peg + lens), not defaulted to whichever was used last
+- [ ] Opening technique is different from the previous post on this platform (check the last daily doc / reference library before writing) — no back-to-back repeats
 - [ ] The payoff line is followed by one more tension line, not an immediate explanation
 - [ ] Claims point at "you," not at a third-person category
 - [ ] Every supporting point has a real proof point behind it (from STYLE_LIBRARY.md, never invented)
+- [ ] Read start to finish once as a reader, not a checklist-follower — does it read like a story someone would actually stop scrolling for, or like a filled-in template?
 - [ ] Sanjay's voice wins over the framework wherever they conflict

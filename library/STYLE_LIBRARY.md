@@ -210,7 +210,9 @@ Explanation
 | Vulnerable opener | "Nobody told me building an agency at 23 would feel like this." |
 | Counterintuitive stat | "A podcast is the only content format where someone spends 45-90 minutes with you." |
 
-Rule: the hook must work standalone in the feed preview. Read only the first line — if it doesn't earn "see more," rewrite it. Apply the negation-before-explanation pattern from 05_PERSUASION_WRITING_SKILL.md where it fits the format.
+Rule: the hook must work standalone in the feed preview. Read only the first line — if it doesn't earn "see more," rewrite it.
+
+**Rotate patterns — never reuse the same one two posts in a row, on any platform.** Before writing a hook, check what pattern the previous post (this platform, and ideally the last few days) used and pick a different one from this table. A negation opener ("No, it's not X") is one option here, not the default — see 05_PERSUASION_WRITING_SKILL.md's Opening Move section for when it's the right call versus when a different pattern will land harder. The goal is that each post reads like its own piece of writing, not a template with the topic swapped in.
 
 ---
 

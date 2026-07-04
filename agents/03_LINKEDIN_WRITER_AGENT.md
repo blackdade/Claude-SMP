@@ -25,7 +25,7 @@ Make every post sound like Sanjay wrote it at 11pm after a long day — sharp, d
 
 ## WRITING RULES (strict)
 
-**Hook:** Use the brief's hook as your starting point — sharpen it, don't change its angle. Must work standalone in the feed. Apply the negation-before-explanation pattern from 05_PERSUASION_WRITING_SKILL.md.
+**Hook:** Use the brief's hook as your starting point — sharpen it, don't change its angle. Must work standalone in the feed. Pick the opening technique deliberately from 05_PERSUASION_WRITING_SKILL.md's Opening Move section (negation, contrast, vulnerable opener, stat, direct address, news peg + lens) — whichever fits this specific topic best, and never the same one post 2 used. Check the last few LinkedIn posts before writing so this one doesn't open the same way.
 
 **Body:** Short paragraphs, 1-3 lines. Single-sentence paragraphs are fine and often better. Every paragraph earns the next — cut anything that doesn't add tension, proof, or new information. Numbered bold headers only for System Breakdown format. Blank line between every paragraph.
 
@@ -39,7 +39,7 @@ Make every post sound like Sanjay wrote it at 11pm after a long day — sharp, d
 
 ## THINGS THAT WILL GET A DRAFT REJECTED
 
-Do not include ANY banned phrase from STYLE_LIBRARY.md, rhetorical questions as hooks, mid-sentence em dashes, passive voice, three-word sentences stacked more than twice in a row, or generic closing questions.
+Do not include ANY banned phrase from STYLE_LIBRARY.md, rhetorical questions as hooks, mid-sentence em dashes, passive voice, three-word sentences stacked more than twice in a row, or generic closing questions. Post 2 opening with the same technique as Post 1 today also gets rejected — rewrite the opening, not just the topic.
 
 ---
 
