@@ -92,9 +92,9 @@ Rillix content is NOT a news channel. It is thought leadership that occasionally
 ### LinkedIn
 - Post 1-2x per day.
 - Split: 60-70% podcast/media authority content, 30-40% product launch and startup content.
-- Formats (ranked by performance below): System Breakdown, Big Signal Post, Founder Journey, Client Story, Contrarian Take.
-- Hashtags: 4-8 at the end. Always include at least two of #podcast #VC #founder #Startups.
-- Best performing format: numbered system breakdown + comment-trigger CTA.
+- Formats (ranked by performance below): System Breakdown, Big Signal Post, Founder Journey, Client Story, Contrarian Take, The Field Report.
+- Hashtags: 4-8 at the end. Always include at least two of #podcast #VC #founder #Startups — except The Field Report, which uses broader lifestyle-adjacent tags instead (see that format's spec).
+- Best performing by impressions: numbered system breakdown + comment-trigger CTA. Best performing by engagement rate: The Field Report — worth rotating in periodically, not just defaulting back to System Breakdown every time.
 
 ### X (Twitter)
 - Post 1-2x per day.
@@ -195,6 +195,29 @@ Explanation
 
 [Pick-a-side question]
 ```
+
+### 6. The Field Report (Numbered Lessons from Direct Experience) — HIGH ENGAGEMENT-RATE FORMAT
+**When:** Sanjay has direct, first-hand experience — a trip, an event, a run of client calls, conversations with a specific number of people — that produced real observations. Not a Rillix process (that's System Breakdown), not one client's result (that's Client Story), not a single stance (that's Contrarian Take). This is personal field intelligence, numbered.
+```
+[Hook: specific number + credible experience + implied list — "I talked to N [people] about [topic]. Here's what I learned."]
+[1-line setup]
+
+1. [Insight title]
+[1-3 lines, real numbers/specifics where possible. Use → sub-arrows for a mini-process inside a point.]
+
+2. [Insight title]
+...
+(4-6 numbered points total)
+
+[Emotional or philosophical pivot — a quote or realization that isn't tactical, the human truth behind the list]
+
+[Soft, curiosity-driven CTA — an invitation, not a pitch: "let me know if you want X"]
+
+[Broad, lifestyle-adjacent hashtags, not just niche VC/podcast ones]
+```
+**Why it works:** Numbered format is highly skimmable and gives readers individual points to react to and comment on — each number is its own comment-bait. Real personal photos (native image carousel, never stock or generated graphics) dramatically outperform text-only for this format specifically. The emotional/philosophical closer gives readers a reason to comment about themselves, not just acknowledge the post — comment volume is what LinkedIn's algorithm rewards with extended reach. The soft CTA lowers the friction to reply versus a comment-trigger word.
+
+**Reference example:** Dhruv Mukherjee, "I met 17 millionaires in Bali" — ~90K impressions but 1,513 reactions, 171 comments, 21 reposts (~1.7% engagement rate, roughly 2.6x higher than Sanjay's a16z post's ~0.64%, despite far fewer impressions). Proof that engagement rate compounds reach more than raw impressions do — worth prioritising this format periodically over purely analytical posts like Big Signal.
 
 ---
 
@@ -322,6 +345,7 @@ Posts Sanjay shares for inspiration. Agent reads these before writing.
 |---|---|---|---|
 | 2026-07-02 | Sanjay | Full LinkedIn history | Base style library |
 | 2026-07-03 | Priyanshu Patel, LinkedIn | Spec pitch podcast repurposing strategy | "Public audit" client-acquisition format — pitch a named target's content strategy in public instead of in DMs |
+| 2026-07-04 | Dhruv Mukherjee, LinkedIn | Numbered lessons from Bali millionaires trip | Source of new Format 6 (The Field Report) — 2.6x the engagement rate of Sanjay's a16z post despite fewer impressions |
 | [Add as shared] | | | |
 
 ---
