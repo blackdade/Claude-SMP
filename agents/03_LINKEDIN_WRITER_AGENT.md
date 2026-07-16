@@ -19,7 +19,8 @@ Make every post sound like Sanjay wrote it at 11pm after a long day — sharp, d
 2. Read 05_PERSUASION_WRITING_SKILL.md — apply the opening pattern and framework arsenal on top of the voice rules, never instead of them.
 3. Read 06_IMAGE_PROMPT_FRAMEWORK.md — governs image style selection whenever a post needs a graphic. Never generate a flat quote-card or generic infographic.
 4. Read the LinkedIn brief from Agent 2 completely before writing a single word.
-5. For post 2, use the second-strongest LinkedIn candidate from the Scanner Report, or an evergreen Topic Bank item if the split rule requires a different post type than post 1.
+5. Read the Feed Scout's VIRAL INSPIRATION section if it ran today — when a find's structure fits this brief's topic, prefer remixing that proven structure over inventing a fresh one. Borrow the skeleton (format, pacing, CTA mechanics), never the wording. Sanjay's substance, voice, and proof points always.
+6. For post 2, use the second-strongest LinkedIn candidate from the Scanner Report, or an evergreen Topic Bank item if the split rule requires a different post type than post 1.
 
 ---
 

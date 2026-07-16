@@ -10,13 +10,14 @@
 Every morning:
 1. Reads every agent file and the library from this repo
 2. Runs the Scanner Agent — separate searches for LinkedIn and X, plus a Substack yes/no call
-3. Runs the Angle + POV Agent — one brief per platform
-4. Runs the LinkedIn Writer Agent — 2 posts
-5. Runs the X Writer Agent — 2 posts
-6. Runs the Substack Writer Agent — only if the Scanner said Substack = Yes today
-7. Runs the full quality check on every draft
-8. Compiles one complete daily document covering all platforms
-9. Saves that document to Google Drive as a Google Doc
+3. Runs the Feed Scout Agent — browses Sanjay's real logged-in LinkedIn and X for viral outlier posts in the niche (only when the browser is available; skip cleanly otherwise)
+4. Runs the Angle + POV Agent — one brief per platform
+5. Runs the LinkedIn Writer Agent — 2 posts
+6. Runs the X Writer Agent — 2 posts
+7. Runs the Substack Writer Agent — only if the Scanner said Substack = Yes today
+8. Runs the full quality check on every draft
+9. Compiles one complete daily document covering all platforms
+10. Saves that document to Google Drive as a Google Doc
 
 ---
 
@@ -35,8 +36,11 @@ Read, in order:
 ### Step 2 — Run the Scanner Agent
 Follow `agents/01_SCANNER_AGENT.md` exactly. Run all 9 searches (4 LinkedIn, 4 X, 1 combined). Score every candidate. Output the Scanner Report, including the Substack yes/no call and any Watchlist alerts.
 
+### Step 2b — Run the Feed Scout Agent (browser-dependent)
+Follow `agents/07_FEED_SCOUT_AGENT.md`. Requires the Chrome browser MCP connector (Sanjay's real logged-in browser) — if it isn't available this run, skip and write "Feed Scout skipped — browser not available this run" in the daily doc instead; never fake its findings. Output the VIRAL INSPIRATION section: 3-5 outlier posts from LinkedIn and X with direct links, verbatim hooks, outlier scores, and remix guidance. Strictly read-only on Sanjay's accounts.
+
 ### Step 3 — Run the Angle + POV Agent
-Follow `agents/02_ANGLE_POV_AGENT.md`. Produce one brief for LinkedIn, one for X, and one for Substack only if the Scanner said yes. Enforce topic split per platform.
+Follow `agents/02_ANGLE_POV_AGENT.md`. Produce one brief for LinkedIn, one for X, and one for Substack only if the Scanner said yes. Enforce topic split per platform. If the Feed Scout found outliers whose structure fits a brief's topic, note in the brief which viral structure the writer should remix — proven skeleton, Sanjay's substance and voice, never copied wording.
 
 ### Step 4 — Run the LinkedIn Writer Agent
 Follow `agents/03_LINKEDIN_WRITER_AGENT.md`. Write 2 full posts from the brief and the second-strongest LinkedIn candidate.
@@ -54,6 +58,8 @@ Only if Step 2 said Substack = Yes. Follow `agents/05_SUBSTACK_WRITER_AGENT.md`.
 - [ ] Sounds like Sanjay, not an AI or a content agency
 - [ ] Proof point used is real (from STYLE_LIBRARY.md, never invented)
 - [ ] Topic split respected per platform
+- [ ] Opening technique differs from the previous post on the same platform (check yesterday's daily doc) — no back-to-back repeats of the same hook pattern
+- [ ] Post format differs from yesterday's on the same platform where the topic allows — rotate the 6 LinkedIn formats, don't default to System Breakdown daily
 - [ ] Creative asset brief included on every post
 - [ ] Hashtags correct for platform (LinkedIn 4-8, X 0-2, Substack none)
 
@@ -67,6 +73,13 @@ RILLIX DAILY CONTENT — [DATE] — Generated 10:00am IST
 
 WHAT I FOUND TODAY
 [Scanner summary — top pick for each platform, 3-4 lines each]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VIRAL INSPIRATION TODAY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Feed Scout output — 3-5 outlier posts with clickable links, verbatim hooks,
+outlier scores, and remix guidance. Or "Feed Scout skipped — browser not
+available this run." Links must be real <a href> hyperlinks in the Drive doc.]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 LINKEDIN POST 1
@@ -152,6 +165,20 @@ After saving, confirm at the end of the run:
 - Direct link to the doc
 
 If saving fails, say so explicitly rather than silently skipping this step — the daily document should still be delivered as the routine's final response either way.
+
+### Step 9b — Save a local markdown copy for the Rillix OS dashboard
+
+ALSO save the same daily content as a plain markdown file (not HTML) so it appears in
+the Rillix OS dashboard's "Daily Content" panel and its search index:
+
+- Read the vault path from `D:\Claude\SMP\rillix-os\config.json` key `vault_path`
+  (NEVER hand-type vault paths — some contain invisible trailing characters).
+- Write to: `<vault_path>\Rillix\Content\YYYY-MM-DD — Daily Content.md`
+- Content: a `# Daily Content — YYYY-MM-DD` heading, then the same sections as the
+  Google Doc in plain markdown, and at the top a line linking to the Google Doc:
+  `*Google Doc: <link>*`.
+- This step must not replace the Drive save — do both. If the local write fails,
+  say so in the final response.
 
 ---
 

@@ -21,11 +21,12 @@ This is NOT a news channel. It's a thought-leadership engine that occasionally u
 Read `library/STYLE_LIBRARY.md`, `library/05_PERSUASION_WRITING_SKILL.md`, and `library/06_IMAGE_PROMPT_FRAMEWORK.md` before any agent runs — they govern voice, persuasion structure, and image style for everything downstream. The image framework matters especially: never generate a flat quote-card or generic infographic — every graphic picks a specific "scroll-stopping" style (cyberpunk anime workstation, data-mosaic matrix art, neon typography, etc.) matched to the post's theme.
 
 1. **agents/01_SCANNER_AGENT.md** — finds today's topics. Runs 9 searches (4 LinkedIn, 4 X, 1 combined) plus daily Watchlist monitoring, scores every candidate (topic-fit rubric, plus an Outlier Score for post-shaped candidates), and calls a Substack yes/no.
-2. **agents/02_ANGLE_POV_AGENT.md** — turns each platform's top topic into a brief: Sanjay's actual position, proof point, key points, engagement hook. One brief per platform.
-3. **agents/03_LINKEDIN_WRITER_AGENT.md** — writes 2 LinkedIn posts/day from the briefs.
-4. **agents/04_X_WRITER_AGENT.md** — writes 2 X posts/day (format auto-selected: single post, thread, hot take, or video callout).
-5. **agents/05_SUBSTACK_WRITER_AGENT.md** — writes a Substack piece 2-3x/week, only when the Scanner says it's warranted.
-6. **agents/06_REFERENCE_AGENT.md** — manual trigger. Processes a post Sanjay shares (or the "SAVE" command, see below) into the reference library.
+2. **agents/07_FEED_SCOUT_AGENT.md** — browses Sanjay's real logged-in LinkedIn and X (Chrome browser MCP) for viral outlier posts in the niche: small accounts with disproportionate engagement. Captures links, verbatim hooks, and remix guidance into a VIRAL INSPIRATION section. Browser-dependent — runs whenever the computer is awake; skips cleanly (never fakes output) when the browser isn't available. Strictly read-only on Sanjay's accounts.
+3. **agents/02_ANGLE_POV_AGENT.md** — turns each platform's top topic into a brief: Sanjay's actual position, proof point, key points, engagement hook. One brief per platform. Notes which viral structure from the Feed Scout to remix when one fits.
+4. **agents/03_LINKEDIN_WRITER_AGENT.md** — writes 2 LinkedIn posts/day from the briefs.
+5. **agents/04_X_WRITER_AGENT.md** — writes 2 X posts/day (format auto-selected: single post, thread, hot take, or video callout).
+6. **agents/05_SUBSTACK_WRITER_AGENT.md** — writes a Substack piece 2-3x/week, only when the Scanner says it's warranted.
+7. **agents/06_REFERENCE_AGENT.md** — manual trigger. Processes a post Sanjay shares (or the "SAVE" command, see below) into the reference library.
 
 `routines/DAILY_ROUTINE.md` ties all of this together end to end, including the quality checklist and the final Google Drive save step.
 
