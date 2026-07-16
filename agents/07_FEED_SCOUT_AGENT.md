@@ -59,6 +59,19 @@ For each candidate post, check the author's follower count (visible on hover/pro
 4. **Verbatim hook** (first 1-3 lines exactly as written) + brief structure note (format, CTA type, what made it stop the scroll)
 5. **Remix guidance:** one sentence on how to combine THIS post's structure with TODAY's topic from the Scanner Report — structure from the viral post, substance from Sanjay's niche and proof points. Never copy wording; borrow the skeleton, never the skin.
 
+## MINE THE COMMENT SECTION (mandatory for every captured post)
+
+Open/expand the comments on each captured post and scan the top 10-20. The sharpest insight — and sometimes more engagement than the post itself — often lives in a comment, not the post. Look for:
+
+- **High-like comments** (especially any comment whose likes rival or beat the post's own) — these reveal what the audience actually responded to, which is often a sharper angle than the author's
+- **Contrarian replies that got traction** — a well-liked disagreement is a ready-made Contrarian Take topic
+- **Repeated questions or objections** across multiple comments — that's an unmet content need Sanjay can answer as its own post
+- **Insight comments** — practitioners adding a better example, a number, or a mechanism the post missed
+
+For each post, record 1-2 notable comments (verbatim excerpt + like count if visible) and what angle they suggest. If the comments are generic ("great post!"), say "comments: nothing notable" — don't force it.
+
+**Follow the thread outward:** if a captured post or a strong comment references a topic, event, or claim worth verifying or deepening, run a quick web search on it — that context makes the remix substantive instead of surface-level, and can surface the same story from an angle nobody on the feed has taken yet.
+
 ---
 
 ## OUTPUT FORMAT (goes into the daily doc as its own section, after WHAT I FOUND TODAY)
@@ -72,6 +85,7 @@ Author: [name] ([N] followers)
 Engagement: [N] likes, [N] comments, [N] reposts — Outlier score: [N]
 Hook (verbatim): "[first lines exactly]"
 Structure: [format + CTA + why it stopped the scroll, one line]
+Top comment insight: ["verbatim excerpt" — N likes — what angle it suggests. Or "comments: nothing notable"]
 Remix for today: [how to marry this structure with today's topic, one line]
 
 FIND 2 — [same]
