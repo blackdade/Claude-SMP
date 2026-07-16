@@ -22,19 +22,23 @@ Web search only surfaces what news sites and blogs cover. The actual feed — wh
 
 ## SEARCH PLAN (run all, ~10-15 min budget)
 
-On **LinkedIn** (search top-right, filter to Posts, sort by recency where possible):
-1. Search: "podcast" — filter Posts, past week
-2. Search: "founder content" OR "personal brand" — Posts, past week
-3. Search: "product launch" — Posts, past week
+**Follow the platform split from STYLE_LIBRARY.md — LinkedIn skews podcast/media (60-70%), X skews launch/startup (50-60%).** Weight the searches accordingly instead of treating both platforms identically; this is a standing rule, not a one-off preference.
+
+On **LinkedIn** (search top-right, filter to Posts) — majority podcast/media-weighted:
+1. Search: "podcast" OR "podcast growth" — Posts, past week
+2. Search: "founder content" OR "personal brand" — Posts, past week (secondary weight)
+3. Search: "product launch" — Posts, past week (minority weight — this is X's primary lane)
 4. Scroll Sanjay's own home feed 2-3 screens — flag anything niche-relevant with unusual traction
 
-On **X** (search bar, use Latest and Top tabs):
-5. Search: podcast growth OR podcast clips — Top, this week
-6. Search: startup launch OR launch video — Top, this week
+On **X** (search bar, use Latest and Top tabs) — majority launch/startup-weighted:
+5. Search: startup launch OR launch video OR product hunt — Top, this week
+6. Search: podcast clips OR podcast growth — Top, this week (secondary weight)
 7. Search: "personal brand" founder — Top, this week
-8. Scroll Sanjay's home timeline 2-3 screens — flag niche-relevant outliers
+8. Scroll Sanjay's home timeline 2-3 screens — flag niche-relevant outliers, and check X's own "Today's News"/trending panel for anything involving a Watchlist name
 
 Adapt queries when a bigger story is live (use Scanner Report context if already run). Quality over coverage: 3-5 genuinely strong finds beat 15 weak ones.
+
+**Don't default to big/verified accounts just because they're easy to find.** A Watchlist person's post is worth capturing when it's genuinely relevant (they earned that slot), but the search itself must also dig for small accounts (under ~5K followers) getting disproportionate traction — that's the outlier signal this agent exists to catch, and it's easy to miss because search results surface big names first. Actively scroll past the first few big-account results to check what's underneath. A mix across a single run should include at least one small-account find, not exclusively Watchlist/verified names.
 
 ---
 
